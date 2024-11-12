@@ -24,8 +24,8 @@ The assignment subject must be approved by the professor, who if need arises, ma
 The report includes the following parts, corresponding to the work to be developed:
 
 1. Subject description. Assignment requirements.
-2. Planning: dimensional bus matrix, dimensions and facts dictionary. [Docs](./docs/dimensional-bus-matrix)
-3. Dimensional data model ([explained](./docs/dimensional-model/diagram.md)). [Image](./docs/dimensional-model/diagram.png)
+2. Planning: dimensional bus matrix, dimensions and facts dictionary.
+3. Dimensional data model (explained).
 4. Data sources selection. Extraction, transformation and loading.
 5. Querying and data analysis.
 6. Critical reflection about the advantages and short comes with respect to the operational databases.
