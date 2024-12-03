@@ -9,7 +9,7 @@
 
 ## 2. Dimensions Dictionary
 
-- **Date Dimension**:
+- **Year Dimension**:
   - `year` (year the movie was released)
 
 - **Keyword Dimension**: Captures details about keywords.
@@ -29,8 +29,8 @@
   - `genre_name`
 
 - **Actor Dimension**: Contains information on main cast members.
-  - `cast_id` (unique identifier)
-  - `cast_name`
+  - `actor_id` (unique identifier)
+  - `actor_name`
 
 ## 3. Facts Dictionary
 
@@ -57,7 +57,7 @@
 - MovieKeywords: connects the movies with it's keyword
 - MovieGenres: connects the movies with it's genres
 
-## 5. Agregation Star (?)
+## 5. Agregation Star
 
 ### 5.1 Aggregate Star: **Actor-Genre Aggregate**
 
@@ -87,7 +87,7 @@ Purpose: Provides insight into how certain keywords are distributed across genre
     - Keyword Dimension
     - Genre Dimension
 
-### 5.3 Aggregate Star: **Yearly Genre Performance**
+### 5.3 Aggregate Star: **Year-Genre Aggregate**
 
 Purpose: Tracks the yearly popularity and volume of each genre.
 
