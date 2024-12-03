@@ -9,7 +9,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | Movie Fact | X | X | X | X | X | X |
 
-Meter bridge tables?
+Meter bridge tables???
 
 
 ## 2. Dimensions Dictionary
@@ -47,7 +47,11 @@ Meter bridge tables?
   - `overview` (description of the movie)
   - `director_id` (fk to *Movie Dimension*)
   - `writer_id` (fk to *Writer Dimension*)
-  - `year` (release year)
+  - `year` (fk to *Date Dimension*)  
+  - `rating` (average rating of the movie)
+  - `user_rating` (number of ratings given by users)
+  - `popularity_score` (numeric, from `Popularity`)
+  - `vote_count` (numeric, from `Votes`)
   - `path` (path to the movie)
   - `adult` (boolean indicating if the movie is intended for adults)
   - `poster_image` (path to the poster image)
