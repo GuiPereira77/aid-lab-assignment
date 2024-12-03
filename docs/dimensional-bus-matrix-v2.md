@@ -29,8 +29,8 @@
   - `genre_name`
 
 - **Actor Dimension**: Contains information on main cast members.
-  - `cast_id` (unique identifier)
-  - `cast_name`
+  - `actor_id` (unique identifier)
+  - `actor_name`
 
 ## 3. Facts Dictionary
 
@@ -66,7 +66,7 @@ Purpose: To analyze which actors frequently appear in certain genres, enabling a
 - **Fact Table**: Actor-Genre Aggregate
     - `actor_genre_agg_id` (unique identifier for each record)
     - `genre_id` (FK to Genre Dimension)
-    - `cast_id` (FK to Actor Dimension)
+    - `actor_id` (FK to Actor Dimension)
     - `movie_count` (count of movies for this actor in this genre)
     - `avg_rating` (average rating of movies for this actor in this genre)
     - `avg_popularity` (average popularity of movies for this actor in this genre)

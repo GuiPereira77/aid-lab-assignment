@@ -29,8 +29,8 @@ CREATE TABLE dim_genre (
 
 -- Actor Dimension
 CREATE TABLE dim_actor (
-    cast_id INT PRIMARY KEY AUTO_INCREMENT,
-    cast_name VARCHAR(255)
+    actor_id INT PRIMARY KEY AUTO_INCREMENT,
+    actor_name VARCHAR(255)
 );
 
 -- Movie Details Fact Table
@@ -59,10 +59,10 @@ CREATE TABLE fact_movie (
 -- Bridge Tables
 CREATE TABLE bridge_movie_cast (
     movie_id INT,
-    cast_id INT,
-    PRIMARY KEY (movie_id, cast_id),
+    actor_id INT,
+    PRIMARY KEY (movie_id, actor_id),
     FOREIGN KEY (movie_id) REFERENCES fact_movie(movie_id),
-    FOREIGN KEY (cast_id) REFERENCES dim_actor(cast_id)
+    FOREIGN KEY (actor_id) REFERENCES dim_actor(actor_id)
 );
 
 CREATE TABLE bridge_movie_keyword (
@@ -87,13 +87,13 @@ CREATE TABLE bridge_movie_genre (
 CREATE TABLE agg_actor_genre (
     actor_genre_agg_id INT PRIMARY KEY AUTO_INCREMENT,
     genre_id INT,
-    cast_id INT,
+    actor_id INT,
     movie_count INT,
     avg_rating float,
     avg_popularity float,
     
     FOREIGN KEY (genre_id) REFERENCES dim_genre(genre_id),
-    FOREIGN KEY (cast_id) REFERENCES dim_actor(cast_id)
+    FOREIGN KEY (actor_id) REFERENCES dim_actor(actor_id)
 );
 
 -- Keyword-Genre Aggregate
