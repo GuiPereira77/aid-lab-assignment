@@ -1,7 +1,5 @@
 # Planning
 
-> 1 star (Movie details), make use of bridge tables and agregations (e.g.: genre and year) to increase complexity
-
 ## 1. Dimensional Bus Matrix
 
 
@@ -9,15 +7,10 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | Movie Fact | X | X | X | X | X | X |
 
-Meter bridge tables???
-
-
 ## 2. Dimensions Dictionary
 
 - **Date Dimension**:
   - `year` (year the movie was released)
-  - `month` (if available from additional sources)
-  - `day` (if available from additional sources)
 
 - **Keyword Dimension**: Captures details about keywords.
   - `keyword_id` (unique identifier)
@@ -56,7 +49,7 @@ Meter bridge tables???
   - `adult` (boolean indicating if the movie is intended for adults)
   - `poster_image` (path to the poster image)
   - `runtime` (movie's duration time)
-  - `taglines (?)`
+  - `taglines`
 
 ## 4. Bridge Tables (not defined on matrix)
 
@@ -75,7 +68,8 @@ Purpose: To analyze which actors frequently appear in certain genres, enabling a
     - `genre_id` (FK to Genre Dimension)
     - `cast_id` (FK to Actor Dimension)
     - `movie_count` (count of movies for this actor in this genre)
-    - `avg_runtime` (average runtime of movies for this actor in this genre)
+    - `avg_rating` (average rating of movies for this actor in this genre)
+    - `avg_popularity` (average popularity of movies for this actor in this genre)
 - **Dimensions**:
     - Actor Dimension
     - Genre Dimension
@@ -104,6 +98,8 @@ Purpose: Tracks the yearly popularity and volume of each genre.
     - `movie_count` (number of movies in this genre in that year)
     - `total_runtime` (sum of runtimes for movies in this genre and year)
     - `avg_runtime` (average runtime of movies in this genre and year)
+    - `avg_rating` (average rating of movies in this genre and year)
+    - `avg_popularity` (average popularity of movies in this genre and year)
 - **Dimensions**:
     - Date Dimension
     - Genre Dimension
@@ -118,6 +114,8 @@ Purpose: Shows which directors are most active or successful in specific genres,
     - `genre_id` (FK to Genre Dimension)
     - `movie_count` (number of movies directed in this genre)
     - `avg_runtime` (average runtime of movies directed in this genre)
+    - `avg_rating` (average rating of movies directed in this genre)
+    - `avg_popularity` (average popularity of movies directed in this genre)
 - **Dimensions**:
     - Director Dimension
     - Genre Dimension
@@ -132,5 +130,8 @@ Purpose: Tracks the volume and distribution of movies released each year, potent
     - `adult_movie_count` (count of movies marked as adult)
     - `non_adult_movie_count` (count of non-adult movies)
     - `total_movie_count` (total count of movies)
+    - `avg_runtime` (average runtime of movies for this year)
+    - `avg_rating` (average rating of movies for this year)
+    - `avg_popularity` (average popularity of movies for this year)
 - **Dimensions**:
     - Date Dimension
