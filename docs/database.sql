@@ -1,40 +1,42 @@
+USE aid;
+
 -- Date Dimension
-CREATE TABLE dim_date (
+CREATE TABLE IF NOT EXISTS year (
     year INT PRIMARY KEY
 );
 
 -- Keyword Dimension
-CREATE TABLE dim_keyword (
+CREATE TABLE IF NOT EXISTS keyword (
     keyword_id INT PRIMARY KEY AUTO_INCREMENT,
     keyword_name VARCHAR(100)
 );
 
 -- Director Dimension
-CREATE TABLE dim_director (
+CREATE TABLE IF NOT EXISTS director (
     director_id INT PRIMARY KEY AUTO_INCREMENT,
     director_name VARCHAR(255)
 );
 
 -- Writer Dimension
-CREATE TABLE dim_writer (
+CREATE TABLE IF NOT EXISTS writer (
     writer_id INT PRIMARY KEY AUTO_INCREMENT,
     writer_name VARCHAR(255)
 );
 
 -- Genre Dimension
-CREATE TABLE dim_genre (
+CREATE TABLE IF NOT EXISTS genre (
     genre_id INT PRIMARY KEY AUTO_INCREMENT,
     genre_name VARCHAR(50)
 );
 
 -- Actor Dimension
-CREATE TABLE dim_actor (
+CREATE TABLE IF NOT EXISTS actor (
     actor_id INT PRIMARY KEY AUTO_INCREMENT,
     actor_name VARCHAR(255)
 );
 
 -- Movie Details Fact Table
-CREATE TABLE fact_movie (
+CREATE TABLE IF NOT EXISTS movie (
     movie_id INT PRIMARY KEY AUTO_INCREMENT,
     movie_tile VARCHAR(255),
     overview TEXT,
@@ -49,67 +51,67 @@ CREATE TABLE fact_movie (
     adult BOOLEAN,
     poster_image VARCHAR(500),
     runtime INT,
-    taglines TEXT,
+    taglines VARCHAR(1000),
     
-    FOREIGN KEY (director_id) REFERENCES dim_director(director_id),
-    FOREIGN KEY (writer_id) REFERENCES dim_writer(writer_id),
-    FOREIGN KEY (year) REFERENCES dim_date(year)
+    FOREIGN KEY (director_id) REFERENCES director(director_id),
+    FOREIGN KEY (writer_id) REFERENCES writer(writer_id),
+    FOREIGN KEY (year) REFERENCES year(year)
 );
 
 -- Bridge Tables
-CREATE TABLE bridge_movie_cast (
+CREATE TABLE IF NOT EXISTS movie_actor (
     movie_id INT,
     actor_id INT,
     PRIMARY KEY (movie_id, actor_id),
-    FOREIGN KEY (movie_id) REFERENCES fact_movie(movie_id),
-    FOREIGN KEY (actor_id) REFERENCES dim_actor(actor_id)
+    FOREIGN KEY (movie_id) REFERENCES movie(movie_id),
+    FOREIGN KEY (actor_id) REFERENCES actor(actor_id)
 );
 
-CREATE TABLE bridge_movie_keyword (
+CREATE TABLE IF NOT EXISTS movie_keyword (
     movie_id INT,
     keyword_id INT,
     PRIMARY KEY (movie_id, keyword_id),
-    FOREIGN KEY (movie_id) REFERENCES fact_movie(movie_id),
-    FOREIGN KEY (keyword_id) REFERENCES dim_keyword(keyword_id)
+    FOREIGN KEY (movie_id) REFERENCES movie(movie_id),
+    FOREIGN KEY (keyword_id) REFERENCES keyword(keyword_id)
 );
 
-CREATE TABLE bridge_movie_genre (
+CREATE TABLE IF NOT EXISTS movie_genre (
     movie_id INT,
     genre_id INT,
     PRIMARY KEY (movie_id, genre_id),
-    FOREIGN KEY (movie_id) REFERENCES fact_movie(movie_id),
-    FOREIGN KEY (genre_id) REFERENCES dim_genre(genre_id)
+    FOREIGN KEY (movie_id) REFERENCES movie(movie_id),
+    FOREIGN KEY (genre_id) REFERENCES genre(genre_id)
 );
 
 -- Aggregate Stars
 
 -- Actor-Genre Aggregate
-CREATE TABLE agg_actor_genre (
-    actor_genre_agg_id INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS actor_genre (
+    actor_genre_id INT PRIMARY KEY AUTO_INCREMENT,
     genre_id INT,
     actor_id INT,
     movie_count INT,
     avg_rating float,
     avg_popularity float,
     
-    FOREIGN KEY (genre_id) REFERENCES dim_genre(genre_id),
-    FOREIGN KEY (actor_id) REFERENCES dim_actor(actor_id)
+    FOREIGN KEY (genre_id) REFERENCES genre(genre_id),
+    FOREIGN KEY (actor_id) REFERENCES actor(actor_id)
 );
 
 -- Keyword-Genre Aggregate
-CREATE TABLE agg_keyword_genre (
-    keyword_genre_agg_id INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS keyword_genre (
+    keyword_genre_id INT PRIMARY KEY AUTO_INCREMENT,
     genre_id INT,
     keyword_id INT,
     movie_count INT,
     
-    FOREIGN KEY (genre_id) REFERENCES dim_genre(genre_id),
-    FOREIGN KEY (keyword_id) REFERENCES dim_keyword(keyword_id)
+    FOREIGN KEY (genre_id) REFERENCES genre(genre_id),
+    FOREIGN KEY (keyword_id) REFERENCES keyword(keyword_id)
 );
 
 -- Yearly Genre Performance
-CREATE TABLE agg_yearly_genre (
-    year_genre_agg_id INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS yearly_genre (
+    year_genre_id INT PRIMARY KEY AUTO_INCREMENT,
     year INT,
     genre_id INT,
     movie_count INT,
@@ -118,13 +120,13 @@ CREATE TABLE agg_yearly_genre (
     avg_rating float,
     avg_popularity float,
     
-    FOREIGN KEY (year) REFERENCES dim_date(year),
-    FOREIGN KEY (genre_id) REFERENCES dim_genre(genre_id)
+    FOREIGN KEY (year) REFERENCES year(year),
+    FOREIGN KEY (genre_id) REFERENCES genre(genre_id)
 );
 
 -- Director-Genre Aggregate
-CREATE TABLE agg_director_genre (
-    director_genre_agg_id INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS director_genre (
+    director_genre_id INT PRIMARY KEY AUTO_INCREMENT,
     director_id INT,
     genre_id INT,
     movie_count INT,
@@ -132,13 +134,13 @@ CREATE TABLE agg_director_genre (
     avg_rating float,
     avg_popularity float,
     
-    FOREIGN KEY (director_id) REFERENCES dim_director(director_id),
-    FOREIGN KEY (genre_id) REFERENCES dim_genre(genre_id)
+    FOREIGN KEY (director_id) REFERENCES director(director_id),
+    FOREIGN KEY (genre_id) REFERENCES genre(genre_id)
 );
 
 -- Movie Release Trend
-CREATE TABLE agg_yearly_movie_release (
-    year_movie_agg_id INT PRIMARY KEY AUTO_INCREMENT,
+CREATE TABLE IF NOT EXISTS yearly_movie_release (
+    year_movie_id INT PRIMARY KEY AUTO_INCREMENT,
     year INT,
     adult_movie_count INT,
     non_adult_movie_count INT,
@@ -147,5 +149,5 @@ CREATE TABLE agg_yearly_movie_release (
     avg_rating float,
     avg_popularity float,
     
-    FOREIGN KEY (year) REFERENCES dim_date(year)
+    FOREIGN KEY (year) REFERENCES year(year)
 );
