@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS actor (
 -- Movie Details Fact Table
 CREATE TABLE IF NOT EXISTS movie (
     movie_id INT PRIMARY KEY AUTO_INCREMENT,
-    movie_tile VARCHAR(255),
+    movie_title VARCHAR(255),
     overview TEXT,
     director_id INT,
     writer_id INT,

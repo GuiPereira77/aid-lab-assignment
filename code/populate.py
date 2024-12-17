@@ -11,12 +11,9 @@ current_row = ''
 
 engine = create_engine(f'mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}')
 
-print("COMEÇOU ESTA MERDA")
 file_path = './data/final_data.csv'
 df = pd.read_csv(file_path)
 df.fillna(value="", inplace=True)
-
-print("fill na acaboy")
 
 def get_or_create(cursor, table, column, value):
     cursor.execute(f"SELECT {table}_id FROM {table} WHERE {column} = %s", (value,))
@@ -54,9 +51,13 @@ try:
         conn = conn.execution_options(autocommit=True)
         with conn.connection.cursor() as cursor:
             for index, row in df.iterrows():
-                if index % 100 == 0:
-                    print(index)
+                #if index > 500: #used for testing
+                #    break
 
+                if index % 100 == 0:
+                    print("Current index: " + str(index))
+                    cursor.execute("SELECT COUNT(*) FROM movie")
+                    print("Rows in movie table:", cursor.fetchone()[0])
 
                 tagline = ''
                 if(row['Taglines'] != None or row['Taglines'] != 'NaN'):
@@ -71,7 +72,7 @@ try:
 
                 cursor.execute("""
                     INSERT INTO movie (
-                        movie_tile, overview, director_id, writer_id, year, rating, user_rating,
+                        movie_title, overview, director_id, writer_id, year, rating, user_rating,
                         popularity_score, vote_count, path, adult, poster_image, runtime, taglines
                     ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 """, (
@@ -101,6 +102,8 @@ try:
                     cursor.execute("""
                         INSERT IGNORE INTO movie_actor (movie_id, actor_id) VALUES (%s, %s)
                     """, (movie_id, actor_id))
+
+        conn.connection.commit()
 
 except Exception as e:
         print(current_row)
