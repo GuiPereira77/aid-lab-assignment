@@ -56,6 +56,8 @@ try:
 
                 if index % 100 == 0:
                     print("Current index: " + str(index))
+
+                if index % 1000 == 0:
                     cursor.execute("SELECT COUNT(*) FROM movie")
                     print("Rows in movie table:", cursor.fetchone()[0])
 
