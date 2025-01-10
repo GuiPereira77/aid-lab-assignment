@@ -1,0 +1,304 @@
+movie_title,rating,popularity_score,vote_count
+Pinpoint,9.9,0.6,0
+Memory Lane,9.9,1.431,7
+Son of Alibaba Nalpathonnaman,9.8,0.628,0
+Vaaitha,9.8,1.728,6
+Hello Jadoo: The Secret of Jeju Island,9.7,1.504,0
+Love in Ukraine,9.5,0.628,0
+Freedom's Path,9.5,3.21,1
+Vaade Veedu,9.4,0.633,0
+Strong Hawk: My Sister's Keeper,9.4,1.4,0
+Sarsenapati Hambirrao,9.3,1.4,1
+Forty Winks,9.3,3.929,5
+Princess Khutulun,9.3,5.019,29
+R23 Criminals Diary,9.2,0.618,0
+Aasha Encounter,9.2,0.821,0
+Trikona,9.2,1.268,1
+Love in Kilnerry,9.2,1.275,0
+Varayan,9.2,2.622,3
+777 Charlie,9.2,14.203,30
+Local Utpaat,9.1,0.881,0
+Forgiving God,9.1,1.4,1
+Junoon,9.1,2.439,6
+Ramayana: The Legend of Prince Rama,9.1,9.286,32
+Raj Sounds and Lights,9.0,0.6,0
+Fairy Folk,9.0,0.6,0
+Praana,9.0,1.042,1
+Nine Seconds,9.0,1.767,1
+Chal Mera Putt 2,9.0,2.023,7
+Gangster Gangaraju,8.9,2.086,1
+Kireedam,8.9,5.098,34
+Jai Bhim,8.9,9.54,103
+Black,8.9,10.849,179
+Ittu Si Baat,8.8,1.022,0
+Cinema Twain,8.8,1.026,2
+No Land's Man,8.8,1.486,1
+Vikram,8.8,1.723,1
+Play It Cool,8.8,1.866,2
+The Summoned,8.8,3.761,9
+Toma,8.8,5.494,17
+Les Misérables in Concert: The 25th Anniversary,8.8,6.397,64
+Deus,8.8,6.558,25
+From the End Into the Beginning,8.8,9.203,162
+The Phantom of the Opera at the Royal Albert Hall,8.8,11.729,146
+The Kennedy Incident,8.7,0.6,0
+After Party,8.7,0.6,0
+Habji Gabji,8.7,0.874,0
+Major,8.7,0.935,3
+Kothala Rayudu,8.7,1.241,0
+Mere Desh Ki Dharti,8.7,1.966,3
+Outlanders,8.7,2.477,6
+Chhota Bheem aur Krishna: Mayanagari,8.7,2.608,5
+Devasuram,8.7,2.842,29
+Goopy Gyne Bagha Byne,8.7,2.847,21
+Monpura,8.7,2.881,19
+Oh My Darling,8.7,3.272,0
+Pariyerum Perumal,8.7,5.662,61
+Anbe Sivam,8.7,5.779,58
+Saban Oglu Saban,8.7,6.411,85
+Soorarai Pottru,8.7,11.741,64
+Undergrads,8.6,0.6,1
+Puksatte Lifu Pursotte Illa,8.6,0.739,1
+Forever Golden! A Celebration of the Golden Girls,8.6,1.079,3
+Bluff,8.6,1.329,0
+Family of Thakurganj,8.6,1.594,1
+No Vacancy,8.6,1.98,10
+Pushpaka Vimana,8.6,2.122,3
+Kuruthipunal,8.6,2.441,14
+Fatteshikast,8.6,2.601,2
+Mat Kilau,8.6,2.763,9
+Pawankhind,8.6,2.952,4
+In the Heart of the Machine,8.6,2.982,14
+Spadikam,8.6,3.373,30
+Love on a Leash,8.6,3.699,29
+Nayakan,8.6,5.937,62
+Sarpatta Parambarai,8.6,6.188,25
+Rocketry: The Nambi Effect,8.6,7.132,28
+The Silence of the Lambs,8.6,10.604,15043
+Kamli,8.5,0.808,0
+Kabaddi 4: The Final Match,8.5,1.028,1
+"Run, Tiger, Run!",8.5,1.037,2
+Ek Love Ya,8.5,1.238,0
+The Hand That Feeds,8.5,1.249,0
+Dharmaveer,8.5,1.4,2
+East of Middle West,8.5,1.4,0
+Udumb,8.5,1.4,2
+Zübük,8.5,1.538,40
+Tobot Movie: Attack of Robot Force,8.5,1.625,0
+Ngeri-Ngeri Sedap,8.5,1.96,7
+Aditya 369,8.5,2.026,12
+Kaun Pravin Tambe?,8.5,2.235,12
+Model Minority,8.5,2.32,5
+Jungle Cry,8.5,2.788,2
+Aaranya Kaandam,8.5,3.345,26
+Good Girl Jane,8.5,3.518,2
+Eddie & Sunny,8.5,3.829,4
+Virata Parvam,8.5,4.013,8
+Come from Away,8.5,4.315,32
+Les Misérables: The Staged Concert,8.5,4.712,15
+Visaaranai,8.5,5.146,58
+Kaalapani,8.5,5.436,27
+Mahanati,8.5,5.563,40
+Thalapathi,8.5,5.961,38
+Kumbalangi Nights,8.5,6.062,81
+Pudhu Pettai,8.5,6.237,24
+Sardar Udham,8.5,7.838,68
+Asuran,8.5,9.272,70
+Kaithi,8.5,10.474,87
+Gintama: The Final,8.5,13.303,113
+K.G.F: Chapter 2,8.5,15.128,115
+9 Hours,8.4,0.6,0
+Triple D Revenge,8.4,0.6,0
+Sunset Blvd.,8.4,0.853,0
+Maruti Mera Dosst,8.4,0.992,1
+Suspended Inspector Boro,8.4,1.1,0
+A Fairy's Game,8.4,1.4,1
+Mars na Drinu,8.4,1.63,13
+Kaatteri,8.4,1.893,2
+Case 30,8.4,1.96,7
+Ang TV Movie: The Adarna Adventure,8.4,2.177,3
+Dzhentlmeny udachi,8.4,2.267,25
+Do Ankhen Barah Haath,8.4,2.288,8
+Yoddha,8.4,2.542,28
+Pathala Bhairavi,8.4,3.358,4
+Mudhalvan,8.4,3.549,27
+God's Time,8.4,3.551,2
+Ulidavaru Kandanthe,8.4,3.707,20
+Maanaadu,8.4,4.203,18
+Agent Sai Srinivasa Athreya,8.4,4.297,40
+Papanasam,8.4,4.377,39
+Girls und Panzer das Finale: Part III,8.4,4.459,8
+THE PREY: Legend of Karnoctus,8.4,4.598,5
+Kannathil Muthamittal,8.4,5.014,38
+Aisha,8.4,5.279,8
+Thani Oruvan,8.4,6.479,78
+Vada Chennai,8.4,8.175,76
+Drishyam 2,8.4,8.419,85
+The Boat,8.4,9.086,111
+Shershaah,8.4,11.101,73
+Jatt Jeona Mour,8.3,0.6,0
+Cariño brutal,8.3,0.6,0
+Am I Next,8.3,0.836,3
+Super Machi,8.3,0.96,1
+Juara,8.3,1.277,0
+Prasthanam,8.3,1.4,6
+Sher Shivraj,8.3,1.619,3
+Plaga Zombie: American Invasion,8.3,1.802,2
+Naadi Dosh,8.3,2.12,2
+Detetives do Prédio Azul 3: Uma Aventura no Fim do Mundo,8.3,2.182,5
+Vazhakku Enn 18/9,8.3,2.415,12
+Garuda Gamana Vrishabha Vahana,8.3,2.666,8
+SSMB 28,8.3,2.762,0
+Drushyam,8.3,3.327,15
+Satya,8.3,3.942,11
+Apoorva Sagodharargal,8.3,4.023,20
+Baasha,8.3,4.211,56
+Family Dinner,8.3,4.306,13
+Maheshinte Prathikaaram,8.3,4.948,57
+Jana Gana Mana,8.3,5.506,36
+Jaane Bhi Do Yaaro,8.3,5.76,49
+Bangalore Days,8.3,5.955,99
+Khosla Ka Ghosla!,8.3,6.576,85
+Todd McFarlane's Spawn 2,8.3,6.66,19
+Soodhu Kavvum,8.3,6.957,56
+Super Deluxe,8.3,8.447,90
+The Kashmir Files,8.3,8.59,47
+Anniyan,8.3,8.627,79
+Double Indemnity,8.3,11.618,1616
+Ordet,8.3,12.66,318
+Aparajito,8.3,12.909,209
+Dangal,8.3,13.273,865
+Pather Panchali,8.3,13.854,349
+Judgment at Nuremberg,8.3,14.348,679
+War and Peace,8.3,14.372,212
+Requiem for a Dream,8.3,14.706,9188
+Ran,8.2,0.6,0
+Oruthee,8.2,0.91,4
+National Theatre Live: Henry V,8.2,1.049,1
+Mulshi Pattern,8.2,1.176,4
+Dandam,8.2,1.218,0
+"Franklin, historia de un billete",8.2,1.317,2
+San Basilio,8.2,1.4,0
+Ardh,8.2,1.4,1
+We're Not Here to Fuck Spiders,8.2,1.406,1
+Life Without Hope,8.2,1.499,0
+Agni IPS,8.2,1.588,1
+Notoryus,8.2,1.589,0
+578: Phat dan cua ke dien,8.2,1.665,5
+Kshanam,8.2,1.76,7
+Drushyam 2,8.2,2.254,5
+John Luther,8.2,2.315,7
+Mistah,8.2,2.626,3
+The Year Between,8.2,2.78,6
+Farzand,8.2,2.889,2
+Godse,8.2,3.053,36
+Films Confiscated from a French Brothel,8.2,3.093,0
+Bridge of the Doomed,8.2,3.385,6
+Evaru,8.2,3.693,23
+The Great Indian Kitchen,8.2,3.932,27
+Oru CBI Diary Kurippu,8.2,3.946,22
+A Doll's House,8.2,4.12,17
+Kamen Rider: Beyond Generations,8.2,4.542,1
+Kirik Party,8.2,4.546,24
+Todd McFarlane's Spawn 3: The Ultimate Battle,8.2,4.581,27
+Ante Sundharaniki,8.2,4.794,15
+Thadam,8.2,5.209,36
+Stay Awake,8.2,5.259,0
+Article 15,8.2,5.618,127
+Athadu,8.2,5.689,37
+Acidman,8.2,6.316,4
+Paan Singh Tomar,8.2,6.612,109
+Paruthiveeran,8.2,6.99,23
+Vaaranam Aayiram,8.2,7.025,49
+The Shop on Main Street,8.2,7.158,106
+Dhuruvangal Pathinaaru,8.2,7.386,77
+Chhichhore,8.2,7.409,111
+Gokuraku sentô: Kyonyû yumomi,8.2,8.481,1
+I Am a Fugitive from a Chain Gang,8.2,8.923,179
+Soy Cuba,8.2,9.011,178
+Vikram Vedha,8.2,9.155,156
+You Can Live Forever,8.2,9.167,37
+A Face in the Crowd,8.2,9.383,208
+It's Such a Beautiful Day,8.2,9.705,277
+"Lock, Stock and Two Smoking Barrels",8.2,10.029,6078
+The General,8.2,10.166,1087
+Sherlock Jr.,8.2,10.447,855
+Bhaag Milkha Bhaag,8.2,10.571,222
+Gangs of Wasseypur,8.2,10.635,324
+K.G.F: Chapter 1,8.2,12.615,179
+All About Eve,8.2,12.892,1391
+Tumbbad,8.2,13.887,202
+Drishyam,8.2,14.008,349
+Dersu Uzala,8.2,15.429,461
+Sarfarosh,8.1,0.84,0
+Kala Shehar,8.1,0.984,0
+The Goblin,8.1,1.215,1
+Malik,8.1,1.301,2
+Indrajit,8.1,1.4,0
+The Perfect Race,8.1,1.487,3
+The Haunted House: The Sky Ghost vs Jormungandr,8.1,1.764,1
+Ard al-Khof,8.1,1.96,14
+Sathuranga Vettai,8.1,1.96,0
+Operation Java,8.1,1.961,14
+Ardh Satya,8.1,1.978,11
+Bhairava Dweepam,8.1,2.114,3
+The Haunted House: The Secret of the Cave,8.1,2.215,5
+Ekskursante,8.1,2.441,10
+Guidance,8.1,2.703,29
+S certy nejsou zerty,8.1,2.731,38
+Ugramm,8.1,2.776,11
+The Blacklight,8.1,3.206,2
+Subramaniapuram,8.1,3.444,22
+Branagh Theatre Live: Romeo and Juliet,8.1,3.497,19
+Take Off,8.1,3.622,24
+Anjathe,8.1,3.667,12
+The Legend of Bhagat Singh,8.1,3.818,49
+Section 375,8.1,3.824,48
+Underground,8.1,3.887,23
+Vedam,8.1,4.036,28
+Indian,8.1,4.04,10
+Hridayam,8.1,4.064,26
+The Tashkent Files,8.1,4.692,40
+Maanagaram,8.1,4.859,41
+Her Sey Çok Güzel Olacak,8.1,4.914,116
+Toy Story 3 in Real Life,8.1,5.005,0
+Oh My Kadavule,8.1,5.24,29
+Nayattu,8.1,5.255,29
+Esterno notte,8.1,5.34,80
+Aadukalam,8.1,5.402,39
+The Blue Elephant 2,8.1,5.476,2
+Ghilli,8.1,6.061,53
+Sethu,8.1,6.135,8
+Talvar,8.1,7.378,141
+Beregis avtomobilya,8.1,7.386,104
+Barfi!,8.1,7.483,290
+Haider,8.1,7.525,205
+A Wednesday,8.1,7.977,273
+Karnan,8.1,7.99,43
+Kahaani,8.1,8.174,269
+Queen,8.1,8.964,241
+Masaan,8.1,9.019,149
+Dil Bechara,8.1,9.465,83
+Hera Pheri,8.1,9.557,217
+Miss Saigon: 25th Anniversary,8.1,10.028,39
+Die Nibelungen: Siegfried,8.1,10.29,116
+Munna Bhai M.B.B.S.,8.1,10.503,263
+Dil Chahta Hai,8.1,10.587,253
+Safety Last!,8.1,11.326,436
+Viridiana,8.1,11.898,460
+Paper Moon,8.1,12.227,631
+PK,8.1,12.326,883
+Jean de Florette,8.1,12.331,497
+The Heiress,8.1,12.514,219
+White Heat,8.1,12.769,421
+The Man Who Shot Liberty Valance,8.1,12.769,1002
+Ace in the Hole,8.1,13.012,589
+The Best Years of Our Lives,8.1,13.514,572
+Inherit the Wind,8.1,13.736,370
+Bajrangi Bhaijaan,8.1,14.399,430
+A Woman Under the Influence,8.1,14.44,417
+It Happened One Night,8.1,14.808,1087
+On the Waterfront,8.1,14.953,1406
+The Red Shoes,8.1,14.961,567
+In the Name of the Father,8.1,15.234,1587
+Mr. Smith Goes to Washington,8.1,15.338,935
